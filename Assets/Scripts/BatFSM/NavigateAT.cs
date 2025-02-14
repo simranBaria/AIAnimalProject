@@ -21,13 +21,13 @@ namespace NodeCanvas.Tasks.Actions {
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-			navAgent.SetDestination(target.value);
+			
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
-			
-		}
+            navAgent.SetDestination(target.value);
+        }
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
