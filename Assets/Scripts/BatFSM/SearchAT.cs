@@ -1,5 +1,4 @@
 using NodeCanvas.Framework;
-using ParadoxNotion.Design;
 using UnityEngine;
 
 namespace NodeCanvas.Tasks.Actions {
@@ -8,6 +7,8 @@ namespace NodeCanvas.Tasks.Actions {
 		public float wanderDistance, wanderRadius, wanderSampleFrequency, wanderDirectionChangeFrequency;
 
 		public BBParameter<Vector3> target;
+		public BBParameter<float> minHeight, maxHeight;
+		public BBParameter<GameObject> model;
 
 		private Vector3 randomPoint = Vector3.zero;
 		private float timerSinceLastDirectionChange = 0, timeSinceLastSample = 0;
@@ -16,13 +17,6 @@ namespace NodeCanvas.Tasks.Actions {
 		//Return null if init was successfull. Return an error string otherwise
 		protected override string OnInit() {
 			return null;
-		}
-
-		//This is called once each time the task is enabled.
-		//Call EndAction() to mark the action as finished, either in success or failure.
-		//EndAction can be called from anywhere.
-		protected override void OnExecute() {
-			
 		}
 
 		//Called once per frame while the action is active.
@@ -34,7 +28,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 			if (timeSinceLastSample > wanderSampleFrequency)
 			{
-				Vector3 destination = circleCentre + new Vector3(randomPoint.x, agent.transform.position.y, randomPoint.y);
+				Vector3 destination = circleCentre + new Vector3(randomPoint.x, Mathf.Clamp(model.value.GetComponent<Transform>().position.y + Random.Range(-5, 5), 0.5f, 20), randomPoint.z);
 				target.value = destination;
 				timeSinceLastSample = 0f;
 				Debug.DrawLine(agent.transform.position, circleCentre, Color.red, 0.25f);
@@ -45,16 +39,6 @@ namespace NodeCanvas.Tasks.Actions {
 				randomPoint = Random.insideUnitCircle.normalized * wanderRadius;
 				timerSinceLastDirectionChange = 0;
             }
-		}
-
-		//Called when the task is disabled.
-		protected override void OnStop() {
-			
-		}
-
-		//Called when the task is paused.
-		protected override void OnPause() {
-			
 		}
 
 		private void DrawCircle(Vector3 circleCentre, float radius, Color circleColor, int numberOfPoints)

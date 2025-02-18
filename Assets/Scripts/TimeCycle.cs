@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class TimeCycle : MonoBehaviour
 {
-    public int startHour, startMinute, hour, minute;
+    public static bool isNight;
+    public int startHour, startMinute, nightStartHour, dayStartHour, hour, minute;
     public TextMeshProUGUI timeText;
     float minuteChange;
 
@@ -45,6 +44,10 @@ public class TimeCycle : MonoBehaviour
             minute = 0;
             minuteChange = 0;
         }
+
+        // Set if it's night or day
+        if (hour >= nightStartHour || hour < dayStartHour) isNight = true;
+        else isNight = false;
     }
 
     public void DisplayTime()
