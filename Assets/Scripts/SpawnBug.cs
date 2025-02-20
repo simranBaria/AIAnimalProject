@@ -7,27 +7,24 @@ public class SpawnBug : MonoBehaviour
     public GameObject mosquito;
     public Vector3 spawnZone;
     public float spawnTime;
-    float timer;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        timer = spawnTime;
-    }
+    bool canSpawn = true;
 
     // Update is called once per frame
     void Update()
     {
-        if(TimeCycle.isNight)
-        {
-            if (timer <= 0)
-            {
-                Vector3 position = transform.position + new Vector3(Random.Range(spawnZone.x / 2, -spawnZone.x / 2), Random.Range(spawnZone.y / 2, -spawnZone.y / 2), Random.Range(spawnZone.z / 2, -spawnZone.z / 2));
-                Instantiate(mosquito, position, Quaternion.identity);
-                timer = spawnTime;
-            }
-            else timer -= Time.deltaTime;
-        }
+        if (Input.GetKeyDown(KeyCode.Space) && canSpawn) StartCoroutine(Spawn());
+    }
+
+    // Coroutine to spawn a mosquito
+    IEnumerator Spawn()
+    {
+        canSpawn = false;
+        Vector3 position = transform.position + new Vector3(Random.Range(spawnZone.x / 2, -spawnZone.x / 2), Random.Range(spawnZone.y / 2, -spawnZone.y / 2), Random.Range(spawnZone.z / 2, -spawnZone.z / 2));
+        Instantiate(mosquito, position, Quaternion.identity);
+        BugStats.SpawnedBug();
+
+        yield return new WaitForSeconds(spawnTime);
+        canSpawn = true;
     }
 
     // Visualize spawn zone

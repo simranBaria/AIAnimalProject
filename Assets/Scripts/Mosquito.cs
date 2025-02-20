@@ -37,10 +37,4 @@ public class Mosquito : MonoBehaviour
         // Die if morning
         if (!TimeCycle.isNight) Destroy(gameObject);
     }
-
-    // Get eaten
-    private void OnCollisionEnter(Collision collision)
-    {
-        Destroy(gameObject);
-    }
 }
