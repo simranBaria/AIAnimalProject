@@ -15,15 +15,12 @@ namespace NodeCanvas.Tasks.Actions {
 		private NavMeshAgent nmAgent;
 		private Transform modelPosition;
 
-		//Use for initialization. This is called only once in the lifetime of the task.
-		//Return null if init was successfull. Return an error string otherwise
 		protected override string OnInit() {
 			nmAgent = agent.GetComponent<NavMeshAgent>();
 			modelPosition = model.value.GetComponent<Transform>();
 			return null;
 		}
 
-		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 			// Send the navmesh agent to it's desired x and z positions
 			nmAgent.speed = horizontalSpeed.value;

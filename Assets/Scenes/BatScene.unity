@@ -20,8 +20,8 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientSkyColor: {r: 0.06234161, g: 0.017933436, b: 0.2924528, a: 1}
+  m_AmbientEquatorColor: {r: 0.3297776, g: 0.07742971, b: 0.5660378, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
@@ -2185,6 +2185,8 @@ GameObject:
   m_Component:
   - component: {fileID: 476803267}
   - component: {fileID: 476803268}
+  - component: {fileID: 476803270}
+  - component: {fileID: 476803269}
   m_Layer: 0
   m_Name: Bat Model
   m_TagString: Untagged
@@ -2208,6 +2210,7 @@ Transform:
   - {fileID: 1587048550}
   - {fileID: 458802392}
   - {fileID: 1928813171}
+  - {fileID: 1296727058}
   m_Father: {fileID: 988123249}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!95 &476803268
@@ -2231,6 +2234,121 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &476803269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476803266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b304940eee836475a9b44409aa1aac38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundList:
+  - {fileID: 8300000, guid: 0050075c5b651430cbaff0252093bafa, type: 3}
+  - {fileID: 8300000, guid: 3ed23a45a03aa418f822616cfc66759e, type: 3}
+  - {fileID: 8300000, guid: cac1bc18b84974807b9df28307026292, type: 3}
+  - {fileID: 8300000, guid: 6bc0e11ad4c6c42078e35f606e32d5ac, type: 3}
+  - {fileID: 8300000, guid: a529dcf9454ba41cc8ff7b9ba6af74c0, type: 3}
+  - {fileID: 8300000, guid: 62ffe92591a0e4540a8af4bd6f7d2d43, type: 3}
+--- !u!82 &476803270
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476803266}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &479098759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2627,13 +2745,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1.28, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &753463508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,7 +2786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 10, y: 90}
+  m_AnchoredPosition: {x: 10, y: 130}
   m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &753463510
@@ -2691,12 +2809,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use WASD to move the camera
+  m_text: 'Use WASD to rotate the camera
 
-    Press Space to spawn a bug
+    Use Q and E to zoom in and out
 
-    (bugs
-    don''t survive in the day)'
+    Press
+    Space to spawn a bug
+
+    (bugs don''t survive in the day)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3724,12 +3844,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1296727058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &988123245
 GameObject:
@@ -3768,7 +3888,7 @@ MonoBehaviour:
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"batModel":{"_value":1,"_name":"batModel","_id":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"minHeight":{"_value":0.5,"_name":"minHeight","_id":"ff628a29-3a19-4e6b-9aeb-5839726114f3","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"maxHeight":{"_value":20.0,"_name":"maxHeight","_id":"2b7c7493-fa98-44c0-9ca8-8e0c30096a4f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"thirst":{"_value":100.0,"_name":"thirst","_id":"98c78061-c8ac-476f-9ba1-17bf4aada57d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"thirst":{"_value":5.0,"_name":"thirst","_id":"98c78061-c8ac-476f-9ba1-17bf4aada57d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"increaseThirst":{"_name":"increaseThirst","_id":"5f0e0df2-1dba-46dc-9f7f-95b9d8cb5afe","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"aboveWater":{"_name":"aboveWater","_id":"1cdfc491-1ed4-40df-a6ed-d102d16fe774","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"horizontalSpeed":{"_value":5.0,"_name":"horizontalSpeed","_id":"899b9e64-e88f-4cd6-9950-093933356c93","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -3797,7 +3917,7 @@ MonoBehaviour:
   - _json: '{"_value":20.0,"_name":"maxHeight","_id":"2b7c7493-fa98-44c0-9ca8-8e0c30096a4f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_value":100.0,"_name":"thirst","_id":"98c78061-c8ac-476f-9ba1-17bf4aada57d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":5.0,"_name":"thirst","_id":"98c78061-c8ac-476f-9ba1-17bf4aada57d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_name":"increaseThirst","_id":"5f0e0df2-1dba-46dc-9f7f-95b9d8cb5afe","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
@@ -3831,7 +3951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_nestedFSM":{"_value":1},"_position":{"x":278.4373,"y":277.722},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"sleepSpot":2,"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"$type":"NodeCanvas.Tasks.Actions.ReturnAT"},{"state":1,"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"$type":"NodeCanvas.Tasks.Actions.SetAnimationAT"},{"iconPrefab":3,"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"$type":"NodeCanvas.Tasks.Actions.ShowIconAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Return","_position":{"x":545.5369,"y":219.2589},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"state":4,"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"$type":"NodeCanvas.Tasks.Actions.SetAnimationAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Sleep","_position":{"x":408.0,"y":163.5},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"position":{"_name":"batPosition","_targetVariableID":"c5f2e7d9-9412-4151-9d14-d391ddfe9603"},"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"aboveWater":{"_name":"aboveWater","_targetVariableID":"1cdfc491-1ed4-40df-a6ed-d102d16fe774"},"horizontalSpeed":{"_name":"horizontalSpeed","_targetVariableID":"899b9e64-e88f-4cd6-9950-093933356c93"},"verticalSpeed":{"_name":"verticalSpeed","_targetVariableID":"3031da08-0b21-4aa7-b3a3-ba0b65077d25"},"water":{"value":16},"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},{"thirst":{"_name":"thirst","_targetVariableID":"98c78061-c8ac-476f-9ba1-17bf4aada57d"},"increase":{"_name":"increaseThirst","_targetVariableID":"5f0e0df2-1dba-46dc-9f7f-95b9d8cb5afe"},"increaseChange":10.0,"decreaseChange":1.0,"$type":"NodeCanvas.Tasks.Actions.UpdateThirstAT"}]},"_position":{"x":286.1416,"y":389.1451},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.CheckTimeCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"position":{"_name":"batPosition","_targetVariableID":"c5f2e7d9-9412-4151-9d14-d391ddfe9603"},"stoppingDistance":{"_value":0.1},"$type":"NodeCanvas.Tasks.Conditions.TargetReachedCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"checkIfNight":true,"$type":"NodeCanvas.Tasks.Conditions.CheckTimeCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_nestedFSM":{"_value":1},"_position":{"x":278.4373,"y":277.722},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"sleepSpot":2,"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"$type":"NodeCanvas.Tasks.Actions.ReturnAT"},{"state":1,"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"$type":"NodeCanvas.Tasks.Actions.SetAnimationAT"},{"iconPrefab":3,"soundEffect":1,"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"$type":"NodeCanvas.Tasks.Actions.ShowIconAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Return","_position":{"x":545.5369,"y":219.2589},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"state":4,"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"$type":"NodeCanvas.Tasks.Actions.SetAnimationAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Sleep","_position":{"x":408.0,"y":163.5},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"position":{"_name":"batPosition","_targetVariableID":"c5f2e7d9-9412-4151-9d14-d391ddfe9603"},"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"aboveWater":{"_name":"aboveWater","_targetVariableID":"1cdfc491-1ed4-40df-a6ed-d102d16fe774"},"horizontalSpeed":{"_name":"horizontalSpeed","_targetVariableID":"899b9e64-e88f-4cd6-9950-093933356c93"},"verticalSpeed":{"_name":"verticalSpeed","_targetVariableID":"3031da08-0b21-4aa7-b3a3-ba0b65077d25"},"water":{"value":16},"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},{"thirst":{"_name":"thirst","_targetVariableID":"98c78061-c8ac-476f-9ba1-17bf4aada57d"},"increase":{"_name":"increaseThirst","_targetVariableID":"5f0e0df2-1dba-46dc-9f7f-95b9d8cb5afe"},"increaseChange":20.0,"decreaseChange":1.0,"$type":"NodeCanvas.Tasks.Actions.UpdateThirstAT"}]},"_position":{"x":286.1416,"y":389.1451},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.CheckTimeCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"position":{"_name":"batPosition","_targetVariableID":"c5f2e7d9-9412-4151-9d14-d391ddfe9603"},"stoppingDistance":{"_value":0.1},"$type":"NodeCanvas.Tasks.Conditions.TargetReachedCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"checkIfNight":true,"$type":"NodeCanvas.Tasks.Conditions.CheckTimeCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 11400000, guid: 357e5f0ce30a14ca4be4c357fec9cc85, type: 2}
@@ -3841,8 +3961,8 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 66.08911, y: -86.84534}
-    _zoomFactor: 0.7570483
+    _translation: {x: 81, y: -59}
+    _zoomFactor: 0.8388492
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -3882,7 +4002,7 @@ Transform:
   m_GameObject: {fileID: 988123245}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6, z: -34.93}
+  m_LocalPosition: {x: 30.36, y: 0.5, z: -29.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4446,6 +4566,58 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270104902}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1296727057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1296727058}
+  - component: {fileID: 1296727059}
+  m_Layer: 0
+  m_Name: Camera Rotation Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1296727058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296727057}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 963194228}
+  m_Father: {fileID: 476803267}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1296727059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296727057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebaec660a541b485fac20d0fd14aadb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 30
+  zoomSpeed: 2
+  minVerticalAngle: -45
+  maxVerticalAngle: 45
+  minZoom: -7
+  maxZoom: -1
+  cameraObject: {fileID: 963194227}
 --- !u!1 &1304807910
 GameObject:
   m_ObjectHideFlags: 0
@@ -6233,7 +6405,6 @@ MeshFilter:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 939742518}
   - {fileID: 343097596}

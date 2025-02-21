@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 
 public class BugStats : MonoBehaviour
 {
-    public TextMeshProUGUI bugsEatenText, bugsInWorldText, totalBugsSpawnedText;
     static int bugsEaten = 0, bugsInWorld = 0, totalBugsSpawned = 0;
 
-    // Update is called once per frame
+    public TextMeshProUGUI bugsEatenText, bugsInWorldText, totalBugsSpawnedText;
+
     void Update()
     {
         bugsEatenText.text = $"Bugs Eaten: {bugsEaten}";

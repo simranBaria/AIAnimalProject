@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Mosquito : MonoBehaviour
@@ -10,14 +8,13 @@ public class Mosquito : MonoBehaviour
     private float timerSinceLastDirectionChange = 0, timeSinceLastSample = 0;
     private Transform mosquitoTransform;
 
-    // Start is called before the first frame update
     void Start()
     {
+        // Get center point
         mosquitoTransform = GetComponent<Transform>();
         center = mosquitoTransform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Increase timers

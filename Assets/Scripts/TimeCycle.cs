@@ -4,8 +4,10 @@ using TMPro;
 public class TimeCycle : MonoBehaviour
 {
     public static bool isNight;
+
     public int startHour, startMinute, nightStartHour, dayStartHour, hour, minute;
     public TextMeshProUGUI timeText;
+
     float minuteChange;
 
     // Start is called before the first frame update
