@@ -660,7 +660,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -130}
-  m_SizeDelta: {x: 400, y: 50}
+  m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &204045260
 MonoBehaviour:
@@ -1441,7 +1441,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -190}
-  m_SizeDelta: {x: 600, y: 50}
+  m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &346798420
 MonoBehaviour:
@@ -1890,7 +1890,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -70}
-  m_SizeDelta: {x: 400, y: 50}
+  m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &416338761
 MonoBehaviour:
@@ -2252,7 +2252,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cac1bc18b84974807b9df28307026292, type: 3}
   - {fileID: 8300000, guid: 6bc0e11ad4c6c42078e35f606e32d5ac, type: 3}
   - {fileID: 8300000, guid: a529dcf9454ba41cc8ff7b9ba6af74c0, type: 3}
-  - {fileID: 8300000, guid: 62ffe92591a0e4540a8af4bd6f7d2d43, type: 3}
+  - {fileID: 8300000, guid: 4ab731a6690504fce963c4b5813ce8b6, type: 3}
 --- !u!82 &476803270
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3888,7 +3888,7 @@ MonoBehaviour:
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"batModel":{"_value":1,"_name":"batModel","_id":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"minHeight":{"_value":0.5,"_name":"minHeight","_id":"ff628a29-3a19-4e6b-9aeb-5839726114f3","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"maxHeight":{"_value":20.0,"_name":"maxHeight","_id":"2b7c7493-fa98-44c0-9ca8-8e0c30096a4f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"thirst":{"_value":5.0,"_name":"thirst","_id":"98c78061-c8ac-476f-9ba1-17bf4aada57d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"thirst":{"_value":100.0,"_name":"thirst","_id":"98c78061-c8ac-476f-9ba1-17bf4aada57d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"increaseThirst":{"_name":"increaseThirst","_id":"5f0e0df2-1dba-46dc-9f7f-95b9d8cb5afe","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"aboveWater":{"_name":"aboveWater","_id":"1cdfc491-1ed4-40df-a6ed-d102d16fe774","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"horizontalSpeed":{"_value":5.0,"_name":"horizontalSpeed","_id":"899b9e64-e88f-4cd6-9950-093933356c93","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -3917,7 +3917,7 @@ MonoBehaviour:
   - _json: '{"_value":20.0,"_name":"maxHeight","_id":"2b7c7493-fa98-44c0-9ca8-8e0c30096a4f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_value":5.0,"_name":"thirst","_id":"98c78061-c8ac-476f-9ba1-17bf4aada57d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":100.0,"_name":"thirst","_id":"98c78061-c8ac-476f-9ba1-17bf4aada57d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_name":"increaseThirst","_id":"5f0e0df2-1dba-46dc-9f7f-95b9d8cb5afe","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
@@ -3951,7 +3951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_nestedFSM":{"_value":1},"_position":{"x":278.4373,"y":277.722},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"sleepSpot":2,"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"$type":"NodeCanvas.Tasks.Actions.ReturnAT"},{"state":1,"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"$type":"NodeCanvas.Tasks.Actions.SetAnimationAT"},{"iconPrefab":3,"soundEffect":1,"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"$type":"NodeCanvas.Tasks.Actions.ShowIconAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Return","_position":{"x":545.5369,"y":219.2589},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"state":4,"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"$type":"NodeCanvas.Tasks.Actions.SetAnimationAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Sleep","_position":{"x":408.0,"y":163.5},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"position":{"_name":"batPosition","_targetVariableID":"c5f2e7d9-9412-4151-9d14-d391ddfe9603"},"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"aboveWater":{"_name":"aboveWater","_targetVariableID":"1cdfc491-1ed4-40df-a6ed-d102d16fe774"},"horizontalSpeed":{"_name":"horizontalSpeed","_targetVariableID":"899b9e64-e88f-4cd6-9950-093933356c93"},"verticalSpeed":{"_name":"verticalSpeed","_targetVariableID":"3031da08-0b21-4aa7-b3a3-ba0b65077d25"},"water":{"value":16},"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},{"thirst":{"_name":"thirst","_targetVariableID":"98c78061-c8ac-476f-9ba1-17bf4aada57d"},"increase":{"_name":"increaseThirst","_targetVariableID":"5f0e0df2-1dba-46dc-9f7f-95b9d8cb5afe"},"increaseChange":20.0,"decreaseChange":1.0,"$type":"NodeCanvas.Tasks.Actions.UpdateThirstAT"}]},"_position":{"x":286.1416,"y":389.1451},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.CheckTimeCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"position":{"_name":"batPosition","_targetVariableID":"c5f2e7d9-9412-4151-9d14-d391ddfe9603"},"stoppingDistance":{"_value":0.1},"$type":"NodeCanvas.Tasks.Conditions.TargetReachedCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"checkIfNight":true,"$type":"NodeCanvas.Tasks.Conditions.CheckTimeCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_nestedFSM":{"_value":1},"_position":{"x":278.4373,"y":277.722},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"sleepSpot":2,"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"$type":"NodeCanvas.Tasks.Actions.ReturnAT"},{"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"state":1,"$type":"NodeCanvas.Tasks.Actions.SetAnimationAT"},{"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"iconPrefab":3,"soundEffect":1,"$type":"NodeCanvas.Tasks.Actions.ShowIconAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Return","_position":{"x":545.5369,"y":219.2589},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"state":4,"$type":"NodeCanvas.Tasks.Actions.SetAnimationAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Sleep","_position":{"x":408.0,"y":163.5},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"position":{"_name":"batPosition","_targetVariableID":"c5f2e7d9-9412-4151-9d14-d391ddfe9603"},"model":{"_name":"batModel","_targetVariableID":"c3eca496-7e08-4fbc-84f3-ecf19e8b5a9b"},"aboveWater":{"_name":"aboveWater","_targetVariableID":"1cdfc491-1ed4-40df-a6ed-d102d16fe774"},"horizontalSpeed":{"_name":"horizontalSpeed","_targetVariableID":"899b9e64-e88f-4cd6-9950-093933356c93"},"verticalSpeed":{"_name":"verticalSpeed","_targetVariableID":"3031da08-0b21-4aa7-b3a3-ba0b65077d25"},"water":{"value":16},"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},{"thirst":{"_name":"thirst","_targetVariableID":"98c78061-c8ac-476f-9ba1-17bf4aada57d"},"increase":{"_name":"increaseThirst","_targetVariableID":"5f0e0df2-1dba-46dc-9f7f-95b9d8cb5afe"},"increaseChange":20.0,"decreaseChange":1.0,"$type":"NodeCanvas.Tasks.Actions.UpdateThirstAT"}]},"_position":{"x":286.1416,"y":389.1451},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.CheckTimeCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"target":{"_name":"target","_targetVariableID":"16de3a87-549f-457a-892f-7a3512d6df47"},"position":{"_name":"batPosition","_targetVariableID":"c5f2e7d9-9412-4151-9d14-d391ddfe9603"},"stoppingDistance":{"_value":0.1},"$type":"NodeCanvas.Tasks.Conditions.TargetReachedCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"checkIfNight":true,"$type":"NodeCanvas.Tasks.Conditions.CheckTimeCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 11400000, guid: 357e5f0ce30a14ca4be4c357fec9cc85, type: 2}
@@ -3961,8 +3961,8 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 81, y: -59}
-    _zoomFactor: 0.8388492
+    _translation: {x: 44.56752, y: -102.65574}
+    _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -4002,7 +4002,7 @@ Transform:
   m_GameObject: {fileID: 988123245}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.36, y: 0.5, z: -29.59}
+  m_LocalPosition: {x: 20, y: 0.5, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

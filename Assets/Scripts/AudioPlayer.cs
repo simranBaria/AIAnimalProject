@@ -45,5 +45,5 @@ public enum SoundEffect
     Squeak2,
     WindBlowing,
     WaterSplash,
-    Eating
+    Crunch
 }
